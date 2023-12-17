@@ -54,6 +54,6 @@ DELETE /cars/{id}
 - Remove Car: DELETE /cars/{id} - Removes a car from the system when service is done.
 
 ## Author
-Shresth Agarwal
-Student ID: 20102116
-Email: Shresth984@gmail.com
+- Shresth Agarwal
+- Student ID: 20102116
+- Email: Shresth984@gmail.com
