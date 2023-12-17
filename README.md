@@ -1,6 +1,6 @@
 # Car Management System
 
-This is a simple Go program that implements a basic Car Management System with CRUD operations using RESTful API.
+This is a  Go program that implements a basic Car Management System with CRUD operations using RESTful API.
 
 ## Table of Contents
 - [Introduction](#introduction)
