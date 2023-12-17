@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "35c751d5-6104-485a-a510-baa022769666",
+		"name": "Car Management System",
+		"description": "MADE 5 API REQUESTS-\n\n1- CAR ENTERS THE GARAGE\n\n2- GET LIST OF CARS CURRENTLY IN GARRAGE\n\n3-GET INFO OF SPECIFIC CAR\n\n4- UPDATE THE STATUS OF CAR",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31844652"
+	},
+	"item": [
+		{
+			"name": "localhost:5000/cars",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \"licenseplate\":\"UPABCD18\",\r\n    \"model\": \"alphastar234\",\r\n    \"status\": \"inservice\",\r\n    \"carowner\":{\r\n        \"firstname\":\"SHRESTH\",\r\n        \"lastname\":\"Agarwal\",\r\n        \"email\":\"SHRESTH984@gmail.com\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/cars",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"cars"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/cars",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/cars",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"cars"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/cars/0",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/cars/0",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"cars",
+						"0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/cars/1",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"licenseplate\": \"UPPQRS18\",\r\n        \"model\": \"BETAstar234\",\r\n        \"status\": \"serviceDONE\",\r\n        \"carowner\": {\r\n            \"firstname\": \"SHREYA\",\r\n            \"lastname\": \"Agarwal\",\r\n            \"email\": \"SHREYA984@gmail.com\"\r\n        }\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/cars/1",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"cars",
+						"1"
+					]
+				},
+				"description": "API CALL TO UPDATE THE STATUS OF CAR"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:5000/cars/1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/cars/1",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"cars",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
